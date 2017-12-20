@@ -1,7 +1,5 @@
 # thankful
-A simple minimalistic startpage design based on another one I can't remember right now.
-
-It has a background randomizer and even an image randomizer (disabled by default), that change the background on each time the page is loaded.
+A simple minimalistic startpage design.
  
 ![preview](https://raw.githubusercontent.com/DanyBoss/thankful/master/preview.png)
 Preview of the Startpage
