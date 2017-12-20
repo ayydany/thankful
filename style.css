@@ -44,13 +44,12 @@ body {
 
 	text-align: left;
 
-	background-color: var(--main-white-color);
+	background-color: #fff;
 	transition: .3s ease-in-out !important
 }
 
 #searchbox:focus {
 	width: 500px;
-	background-color: var(--main-white-color);
 	transition: .3s ease-in-out !important
 }
 
