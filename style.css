@@ -10,7 +10,8 @@
 
 body {
 	user-select:none;
-
+	display: flex;
+	flex-direction: column;
 	background-color: var(--main-bg-color);
 }
 
@@ -61,10 +62,13 @@ body {
 }
 
 #mainframe {
-	text-align: center;
-	position: absolute;
-	top: 25%;
-	left:15%;
+	margin-top: 5%;
+	width: 60%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-self: center;
+	justify-content: space-around;
+	align-content: center;
 }
 
 .image {
@@ -78,9 +82,9 @@ body {
 } 
 
 .linkblock {
+	width: 25%;
 	display: inline-flex;
 	margin: 15px 15px 15px 15px;
-	width: 25%;
 }
 
 .linkblock li {
