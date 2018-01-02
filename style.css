@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 :root {
-	--main-bg-color: #ECEFF1;
+	--main-bg-color: #E7E7E7;
 	--main-white-color: #FCFBE3;
-	--main-dark-color: #333333;
-	--main-hover-color: #666666;
+	--main-dark-color: #25373D;
+	--main-hover-color: #456772;
 }
 
 body {
@@ -16,18 +13,18 @@ body {
 
 #header {
 	width:100%;
-	display: inline-flex;
+
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 #title {
-	margin-top: 30px;
+	margin: 1% 0 1% 0;
 
-	font:bold 52px 'Lato', sans-serif;
+	font:bold 4vw 'Lato', sans-serif;
 	color: var(--main-dark-color);
 
-	text-transform: lowercase;
 	text-shadow:
 		0 1px 0px var(--main-hover-color),
 		1px 0 0px var(--main-hover-color),
@@ -37,18 +34,18 @@ body {
 }
 
 #searchbox{
-	width: 400px;
+	width: 25%;
 	height: 4%;
 
-	margin-top: 30px;
-	padding: 15px 20px;
+	margin: 1% 0 1% 0;
+	padding: 15px 15px;
 
 	border:none;
 	border-radius: 5px;
 
-	font:lighter 12px 'Open Sans', sans-serif;
 	color: var(--main-dark-color);
-
+	
+	font:lighter 12px 'Open Sans', sans-serif;
 	text-align: left;
 
 	background-color: #fff;
@@ -56,32 +53,39 @@ body {
 }
 
 #searchbox:focus {
-	width: 500px;
+	width: 35%;
 	transition: .3s ease-in-out !important
 }
 
-#mainframe {
-	text-align: center;
+#container {
+	width: 80%;
+	
 	position: absolute;
-	top: 25%;
-	left:15%;
+	left: 12%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
 }
 
-.image {
+.linkblock {
+	width: 25%;
+
+	display: flex;
+
+	margin: 15px 15px 15px 15px;
+}
+
+.linkblock .image {
+	width: 8vw;
+	height: 15vw;
+
 	object-fit: cover;
 	pointer-events: none;
 
-	width: 120px;
-	height: 200px;
-
-	color:var(--main-dark-color);
+	border: 1px solid var(--main-dark-color);
 } 
-
-.linkblock {
-	display: inline-flex;
-	margin: 15px 15px 15px 15px;
-	width: 25%;
-}
 
 .linkblock li {
 	margin-left: 10px;
@@ -89,7 +93,7 @@ body {
 }
 
 a {
-	font:lighter 14px 'Open Sans', sans-serif;
+	font: 1vw 'Open Sans', sans-serif;
 	color: var(--main-dark-color);
 
 	text-decoration: none;
