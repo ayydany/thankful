@@ -23,7 +23,7 @@ body {
 #title {
 	margin: 1% 0 1% 0;
 
-	font:bold 4vw 'Lato', sans-serif;
+	font:bold 4vw 'Roboto Condensed', sans-serif;
 	color: var(--main-dark-color);
 
 	text-shadow:
@@ -46,7 +46,7 @@ body {
 
 	color: var(--main-dark-color);
 	
-	font:lighter 12px 'Open Sans', sans-serif;
+	font:lighter 12px 'Roboto Condensed', sans-serif;
 	text-align: left;
 
 	background-color: #fff;
@@ -80,8 +80,8 @@ body {
 }
 
 .linkblock .image {
-	width: 8vw;
-	height: 15vw;
+	width: 6.5vw;
+	height: 13vw;
 
 	object-fit: cover;
 	pointer-events: none;
@@ -95,7 +95,7 @@ body {
 }
 
 a {
-	font: 1vw 'Open Sans', sans-serif;
+	font: 0.8vw 'Roboto Condensed', sans-serif;
 	color: var(--main-dark-color);
 
 	text-decoration: none;
