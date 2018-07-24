@@ -47,13 +47,16 @@ body {
 	color: var(--main-dark-color);
 	
 	font:lighter 12px 'Roboto Condensed', sans-serif;
-	text-align: left;
+	text-align: center;
 
-	background-color: #fff;
+	background-color: var(--main-bg-color);
 	transition: .3s ease-in-out !important
 }
 
 #searchbox:focus {
+	
+	background-color: #fff;
+
 	width: 35%;
 	transition: .3s ease-in-out !important
 }
