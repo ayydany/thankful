@@ -23,7 +23,7 @@ body {
 #title {
 	margin: 15px 0 15px 0;
 
-	font:bold 4vw 'Roboto Condensed', sans-serif;
+	font:bold 4vw 'Noto Sans Display', sans-serif;
 	color: var(--main-dark-color);
 
 	text-shadow:
@@ -34,7 +34,8 @@ body {
 		2px 3px 0px var(--main-hover-color);
 }
 
-#searchbox{
+
+#searchbox {
 	width: 25%;
 	height: 4%;
 
@@ -42,19 +43,19 @@ body {
 	padding: 15px 15px;
 
 	border:none;
-	border-radius: 5px;
+	border-radius: 10px;
 
 	color: var(--main-dark-color);
 	
-	font:lighter 12px 'Roboto Condensed', sans-serif;
+	font:lighter 12px 'Noto Sans Display', sans-serif;
 	text-align: center;
 
 	background-color: var(--main-bg-color);
 	transition: .3s ease-in-out !important
 }
 
-#searchbox:focus {
-	
+#searchbox:hover, #searchbox:focus {
+	outline:none;
 	background-color: #fff;
 
 	width: 35%;
