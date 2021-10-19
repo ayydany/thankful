@@ -1,0 +1,120 @@
+/*
+                        _______
+                       /       \
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\
+                   /____|| || ||___\
+       ________     ____    ________  ___    ___
+       |  ___  \   /    \   |  ___  \ |  |  /  /
+       |  |  \  \ /  /\  \  |  |  \  \|  |_/  /
+       |  |   )  /  /__\  \ |  |__/  /|  ___  \
+       |  |__/  /  ______  \|  ____  \|  |  \  \
+_______|_______/__/ ____ \__\__|___\__\__|___\__\____
+|  ___  \ |  ____/ /    \   |  ___  \ |  ____|  ___  \
+|  |  \  \|  |___ /  /\  \  |  |  \  \|  |___|  |  \  \
+|  |__/  /|  ____/  /__\  \ |  |   )  |  ____|  |__/  /
+|  ____  \|  |__/  ______  \|  |__/  /|  |___|  ____  \
+|__|   \__\____/__/      \__\_______/ |______|__|   \__\
+                https://darkreader.org
+*/
+
+/*! Dark reader generated CSS | Licensed under MIT https://github.com/darkreader/darkreader/blob/master/LICENSE */
+
+/* User-Agent Style */
+html {
+  background-color: #212425 !important;
+}
+html, body, input, textarea, select, button {
+  background-color: #212425;
+}
+html, body, input, textarea, select, button {
+  border-color: #736b5e;
+  color: #e8e6e3;
+}
+a {
+  color: #3391ff;
+}
+table {
+  border-color: #545b5e;
+}
+::placeholder {
+  color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: #555b00 !important;
+  color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+  background-color: #202324;
+  color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+* {
+  scrollbar-color: #454a4d #202324;
+}
+::selection {
+  background-color: #004daa !important;
+  color: #e8e6e3 !important;
+}
+::-moz-selection {
+  background-color: #004daa !important;
+  color: #e8e6e3 !important;
+}
+
+/* Variables Style */
+:root {
+ --darkreader-neutral-background: #131516;
+ --darkreader-neutral-text: #d8d4cf;
+ --darkreader-selection-background: #004daa;
+ --darkreader-selection-text: #e8e6e3;
+}
+
+/* Modified CSS */
+:root {
+  --darkreader-bg--main-bg-color: #212425;
+  --main-white-color: #fcfbe3;
+  --darkreader-text--main-title-color: #dfddd9;
+  --darkreader-text--main-dark-color: #bab4ab;
+  --darkreader-border--main-dark-color: #746c5f;
+  --darkreader-text--main-hover-color: #9b9386;
+}
+body {
+  background-color: var(--darkreader-bg--main-bg-color);
+}
+#title {
+  color: var(--darkreader-text--main-title-color);
+}
+#searchbox {
+  border-color: currentcolor;
+  color: var(--darkreader-text--main-dark-color);
+  background-color: var(--darkreader-bg--main-bg-color);
+}
+#searchbox:hover,
+#searchbox:focus {
+  outline-color: currentcolor;
+  background-color: rgb(24, 26, 27);
+}
+.linkblock .image {
+  border: 1px solid var(--darkreader-border--main-dark-color);
+}
+a {
+  color: var(--darkreader-text--main-dark-color);
+  text-decoration-color: currentcolor;
+}
+a:hover {
+  color: var(--darkreader-text--main-hover-color);
+}

@@ -6,11 +6,18 @@
   --main-hover-color: #777c79;
 }
 
+html{
+  transition: all 0.3s ease-in-out !important;
+}
+
 body {
-  user-select: none;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
+
   flex-direction: column;
-  background-color: var(--main-bg-color);
+  justify-content: center;
+  align-items: center;
+  
 }
 
 #header {
@@ -21,20 +28,26 @@ body {
   align-items: center;
 }
 
+#btn-toggle {
+  align-self: flex-end; 
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
 #title {
   margin: 15px 0 15px 0;
 
-  font-family: "Lato", sans-serif;
   font-size: 6em;
   font-weight: 700;
   color: var(--main-title-color);
 
-  text-shadow: 
-  0px 1px 0px var(--main-hover-color),
-  1px 0px 0px var(--main-hover-color), 
-  1px 2px 0px var(--main-hover-color),
-  2px 1px 0px var(--main-hover-color), 
-  2px 3px 0px var(--main-hover-color);
+  text-shadow: 0px 1px 0px var(--main-hover-color),
+    1px 0px 0px var(--main-hover-color), 1px 2px 0px var(--main-hover-color),
+    2px 1px 0px var(--main-hover-color), 2px 3px 0px var(--main-hover-color);
 }
 
 #searchbox {
@@ -68,21 +81,18 @@ body {
 #container {
   width: 80%;
 
-  position: absolute;
-  top: 25%;
-  left: 12%;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(2, 25%);
+  grid-template-columns: repeat(3, 33.33%);
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  grid-row-gap:    25px;
+  
 }
 
 .linkblock {
-  width: 25%;
-
   display: flex;
-
-  margin: 15px 15px 15px 15px;
+  justify-content: center;
 }
 
 .linkblock .image {
@@ -95,13 +105,16 @@ body {
   border: 1px solid var(--main-dark-color);
 }
 
+.linkblock .link {
+  width: 1rem;
+}
+
 .linkblock li {
   margin-left: 10px;
   text-align: left;
 }
 
 a {
-  font: 1em "Roboto Condensed", sans-serif;
   color: var(--main-dark-color);
 
   text-decoration: none;
