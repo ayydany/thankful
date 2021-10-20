@@ -87,7 +87,7 @@ body {
 
   display: grid;
   justify-items: center;
-  grid-template-rows: repeat(2, 25%);
+
   grid-template-columns: repeat(3, 33.33%);
 
   grid-row-gap:    25px;
