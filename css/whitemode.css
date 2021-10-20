@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #efefef;
-  --main-white-color: #fcfbe3;
+  --main-white-color: #FBFAF5;
   --main-title-color: #0d0e0e;
   --main-dark-color: #474a48;
   --main-hover-color: #777c79;
@@ -11,6 +11,7 @@ html{
 }
 
 body {
+  background-color: var(--main-bg-color);
   font-family: 'Open Sans', sans-serif;
   display: flex;
 
@@ -72,7 +73,7 @@ body {
 #searchbox:hover,
 #searchbox:focus {
   outline: none;
-  background-color: #fff;
+  background-color: var(--main-white-color);
 
   width: 35%;
   transition: 0.3s ease-in-out !important;
@@ -80,6 +81,9 @@ body {
 
 #container {
   width: 80%;
+
+  margin: 15px 0 15px 0;
+  padding: 15px 15px;
 
   display: grid;
   justify-items: center;
@@ -109,26 +113,34 @@ body {
   width: 1rem;
 }
 
+.linkblock ul {
+  color: var(--main-dark-color);
+  list-style-type: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 0;
+}
+
+.linkblock li:first-child{
+  font-size: 25px;
+  margin-left: 10px;
+  text-align: left;
+}
+
 .linkblock li {
+  margin-top: 2px;
   margin-left: 10px;
   text-align: left;
 }
 
 a {
   color: var(--main-dark-color);
-
   text-decoration: none;
   transition: 0.1s ease-in-out !important;
 }
 
 a:hover {
   color: var(--main-hover-color);
+  font-size: 30px;
   transition: 0.1s ease-in-out !important;
-}
-
-ul {
-  list-style-type: none;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-left: 0;
 }

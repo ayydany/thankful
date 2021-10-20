@@ -10,15 +10,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
         <link rel="icon" type="image/png" sizes="32x32" href="https://emoji.gg/assets/emoji/KannaSip.png">
         <link rel="stylesheet" type="text/css" href="css/whitemode.css">
-        <link rel="stylesheet" type="text/css" href="css/darkmode.css" id="theme-link">
-        <title>bread</title>
+        <!-- <link rel="stylesheet" type="text/css" href="css/darkmode.css" id="theme-link"> -->
+        <title>are you thankful?</title>
     </head>
 
     <body>
         <div id=header>
-            <button id="btn-toggle"><i class="fas fa-moon"></i></button>
             <span id="title">are you thankful?</span>
-            
             <input id="searchbox" placeholder="search options:  -a | -h | -m | -w | -y " type="text" autocomplete="true" onblur="this.value=''"/>
         </div>
 
@@ -26,8 +24,9 @@
             <div class=linkblock>
                 <img class="image" src="res/img1.jpg" alt="cute">
                 <ul class="link">
+                    <li>general</li>
                     <li><a href="https://www.4chan.org/">4chan</a></li>
-                    <li><a href="https://www.reddit.com/">leddit</a></li>
+                    <li><a href="https://www.reddit.com/">reddit</a></li>
                     <li><a href="https://steamcommunity.com/id/DanyBoss">steam</a></li>
                     <li><a href="https://www.youtube.com">youtube</a></li>
                 </ul>
@@ -35,6 +34,7 @@
             <div class=linkblock>
                 <img class="image" src="res/img2.jpg" alt="cute">
                 <ul class="link">
+                    <li>achievements</li>
                     <li><a href="https://completionist.me/steam/profile/76561198059617948">completionist</a></li>
                     <li><a href="https://www.exophase.com/user/DanyBoss/">exophase</a></li>
                     <li><a href="https://steamhunters.com/id/DanyBoss/achievements">hunter</a></li>
@@ -45,24 +45,28 @@
             <div class=linkblock>
                 <img class="image" src="res/img3.jpg" alt="cute">
                 <ul class="link">
-                    <li><a href="https://www.amazon.es">amazon</a></li>
-                    <li><a href="https://www.aliexpress.com/">aliexpress</a></li>
-                    <li><a href="https://www.banggood.com/">banggood</a></li>
-                    <li><a href="http://kuantokusta.pt/">kuantokusta</a></li>
+                    <li>finances</li>
+                    <li><a href="https://www.degiro.pt/">degiro</a></li>
+                    <li><a href="https://www.etoro.com">etoro</a></li>
+                    <li><a href="https://app.revolut.com/start">revolut</a></li>
+                    <li><a href="https://finance.yahoo.com/">finance</a></li>
+
                 </ul>
             </div>
             <div class=linkblock>
                 <img class="image" src="res/img4.jpg" alt="cute">
                 <ul class="link">
-                    <li><a href="https://www.degiro.pt/">degiro</a></li>
-                    <li><a href="https://www.etoro.com">etoro</a></li>
-                    <li><a href="https://app.revolut.com/start">revolut</a></li>
-                    <li><a href="https://finance.yahoo.com/">finance</a></li>
+                    <li>shopping</li>
+                    <li><a href="https://www.amazon.es">amazon</a></li>
+                    <li><a href="https://www.aliexpress.com/">aliexpress</a></li>
+                    <li><a href="https://www.banggood.com/">banggood</a></li>
+                    <li><a href="https://www.kuantokusta.pt/">kuantokusta</a></li>
                 </ul>
             </div>
             <div class=linkblock>
                 <img class="image" src="res/img5.jpg" alt="cute">
                 <ul class="link">
+                    <li>deals</li>
                     <li><a href="https://gg.deals/">ggdeals</a></li>
                     <li><a href="https://ntdeals.net/pt-store">ntdeals</a></li>
                     <li><a href="https://psdeals.net/pt-store">psdeals</a></li>
@@ -72,6 +76,7 @@
             <div class=linkblock>
                 <img class="image" src="res/img6.jpg" alt="cute">
                 <ul class="link">
+                    <li>weeb</li>
                     <li><a href="https://9anime.is">9anime</a></li>
                     <li><a href="http://mangaseeonline.us">mangasee</a></li>
                     <li><a href="http://horriblesubs.info">horrible</a></li>
@@ -81,17 +86,4 @@
         </div>
     </body>
     <script src="search.js" type="text/javascript"></script>
-
-    <script>
-        const btn = document.querySelector("#btn-toggle");
-        const theme = document.querySelector("#theme-link");
-        btn.addEventListener("click", function() {
-          // Swap out the URL for the different stylesheets
-          if (theme.getAttribute("href") == "") {
-            theme.href = "css/darkmode.css";
-          } else {
-            theme.href = "";
-          }
-        });
-      </script>
 </html>
