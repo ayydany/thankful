@@ -4,7 +4,7 @@
 [live version](https://danyboss.github.io/thankful/)
 
 ## Instalation
-Simply download from [here](https://github.com/DanyBoss/ubiquitous/archive/master.zip) and open it locally from your browser.
+Simply download from [here](https://github.com/ayydany/thankful/archive/refs/heads/master.zip) and open it locally from your browser.
 
 If you want to select it as your homepage thats gonna depend on what browser you're using.
 
