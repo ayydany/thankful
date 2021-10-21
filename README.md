@@ -1,6 +1,6 @@
 # thankful
  
-![preview](https://raw.githubusercontent.com/DanyBoss/thankful/master/preview.png)
+![preview](https://github.com/ayydany/thankful/blob/master/preview.png?raw=true)
 [live version](https://danyboss.github.io/thankful/)
 
 ## Instalation
