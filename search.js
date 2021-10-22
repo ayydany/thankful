@@ -71,7 +71,7 @@ window.onload = function () {
   }
 
   // jump to search when tab is pressed
-  var search_sqr = document.getElementById("search_sqr");
+  document.getElementById("search_sqr");
 };
 
 //
