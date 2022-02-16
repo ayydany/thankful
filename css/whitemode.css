@@ -6,13 +6,41 @@
   --main-hover-color: #777c79;
 }
 
+@font-face {
+  font-family: "ProductSans";
+  src: url("../res/font/Product\ Sans\ Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("../res/font/Product\ Sans\ Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("../res/font/Product\ Sans\ Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProductSans";
+  font-weight: bold;
+  src: url("../res/font/Product\ Sans\ Bold\ Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
 html{
   transition: all 0.3s ease-in-out !important;
 }
 
 body {
   background-color: var(--main-bg-color);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'ProductSans', sans-serif;
   display: flex;
 
   flex-direction: column;
