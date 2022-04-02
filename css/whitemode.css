@@ -1,9 +1,12 @@
 :root {
-  --main-bg-color: #efefef;
-  --main-white-color: #FBFAF5;
-  --main-title-color: #0d0e0e;
-  --main-dark-color: #474a48;
-  --main-hover-color: #777c79;
+  --main-bg-color: #232324;
+
+  --main-text-color: #E0DEDA;
+  --main-text-highlight-color: #777c79;
+
+  --main-border-image-color:var(--main-bg-color);
+
+  --searchbox-color: #1A1C1D;
 }
 
 @font-face {
@@ -72,11 +75,11 @@ body {
 
   font-size: 6em;
   font-weight: 700;
-  color: var(--main-title-color);
+  color: var(--main-text-color);
 
-  text-shadow: 0px 1px 0px var(--main-hover-color),
-    1px 0px 0px var(--main-hover-color), 1px 2px 0px var(--main-hover-color),
-    2px 1px 0px var(--main-hover-color), 2px 3px 0px var(--main-hover-color);
+  text-shadow: 0px 1px 0px var(--main-text-highlight-color),
+    1px 0px 0px var(--main-text-highlight-color), 1px 2px 0px var(--main-text-highlight-color),
+    2px 1px 0px var(--main-text-highlight-color), 2px 3px 0px var(--main-text-highlight-color);
 }
 
 #searchbox {
@@ -89,26 +92,25 @@ body {
   border: none;
   border-radius: 5px;
 
-  color: var(--main-dark-color);
+  color: var(--main-text-color);
 
   font: lighter 1em "Lato", sans-serif;
   text-align: center;
 
-  background-color: var(--main-bg-color);
+  background-color: var(--searchbox-color);
   transition: 0.3s ease-in-out !important;
 }
 
 #searchbox:hover,
 #searchbox:focus {
   outline: none;
-  background-color: var(--main-white-color);
 
   width: 35%;
   transition: 0.3s ease-in-out !important;
 }
 
 #container {
-  width: 80%;
+  width: 90%;
 
   margin: 15px 0 15px 0;
   padding: 15px 15px;
@@ -134,7 +136,7 @@ body {
   object-fit: cover;
   pointer-events: none;
 
-  border: 1px solid var(--main-dark-color);
+  border: 1px solid var(--main-border-image-color);
 }
 
 .linkblock .link {
@@ -142,17 +144,11 @@ body {
 }
 
 .linkblock ul {
-  color: var(--main-dark-color);
+  color: var(--main-text-color);
   list-style-type: none;
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 0;
-}
-
-.linkblock li:first-child{
-  font-size: 25px;
-  margin-left: 10px;
-  text-align: left;
 }
 
 .linkblock li {
@@ -162,13 +158,14 @@ body {
 }
 
 a {
-  color: var(--main-dark-color);
+  color: var(--main-text-color);
   text-decoration: none;
   transition: 0.1s ease-in-out !important;
+  font-size: 20px;
 }
 
 a:hover {
-  color: var(--main-hover-color);
-  font-size: 30px;
+  color: var(--main-text-highlight-color);
+  font-size: 25px;
   transition: 0.1s ease-in-out !important;
 }
