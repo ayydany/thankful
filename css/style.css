@@ -138,7 +138,7 @@ body {
   pointer-events: none;
 
   opacity: 75%;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .linkblock .link {
