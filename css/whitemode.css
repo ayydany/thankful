@@ -4,7 +4,7 @@
   --main-text-color: #E0DEDA;
   --main-text-highlight-color: #777c79;
 
-  --main-border-image-color:var(--main-bg-color);
+  --main-border-image-color:#1A1C1D;
 
   --searchbox-color: #1A1C1D;
 }
@@ -88,7 +88,8 @@ body {
 
   margin: 15px 0 15px 0;
   padding: 15px 15px;
-
+  opacity: 75%;
+  
   border: none;
   border-radius: 5px;
 
@@ -136,7 +137,8 @@ body {
   object-fit: cover;
   pointer-events: none;
 
-  border: 1px solid var(--main-border-image-color);
+  opacity: 75%;
+  border-radius: 2px;
 }
 
 .linkblock .link {
@@ -160,6 +162,7 @@ body {
 a {
   color: var(--main-text-color);
   text-decoration: none;
+  opacity: 75%;
   transition: 0.1s ease-in-out !important;
   font-size: 20px;
 }
