@@ -9,33 +9,7 @@
   --searchbox-color: #1A1C1D;
 }
 
-@font-face {
-  font-family: "ProductSans";
-  src: url("../res/font/Product\ Sans\ Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ProductSans";
-  src: url("../res/font/Product\ Sans\ Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "ProductSans";
-  src: url("../res/font/Product\ Sans\ Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ProductSans";
-  font-weight: bold;
-  src: url("../res/font/Product\ Sans\ Bold\ Italic.ttf") format("truetype");
-  font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
 
 html{
   transition: all 0.3s ease-in-out !important;
@@ -43,7 +17,7 @@ html{
 
 body {
   background-color: var(--main-bg-color);
-  font-family: 'ProductSans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
 
   flex-direction: column;
@@ -77,9 +51,12 @@ body {
   font-weight: 700;
   color: var(--main-text-color);
 
-  text-shadow: 0px 1px 0px var(--main-text-highlight-color),
-    1px 0px 0px var(--main-text-highlight-color), 1px 2px 0px var(--main-text-highlight-color),
-    2px 1px 0px var(--main-text-highlight-color), 2px 3px 0px var(--main-text-highlight-color);
+  text-shadow: 
+    0px 1px 0px var(--main-text-highlight-color),
+    1px 0px 0px var(--main-text-highlight-color), 
+    1px 2px 0px var(--main-text-highlight-color),
+    2px 1px 0px var(--main-text-highlight-color), 
+    2px 3px 0px var(--main-text-highlight-color);
 }
 
 #searchbox {
