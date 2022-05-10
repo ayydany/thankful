@@ -18,12 +18,14 @@ html{
 body {
   background-color: var(--main-bg-color);
   font-family: 'Open Sans', sans-serif;
+  
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
   
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 #header {
