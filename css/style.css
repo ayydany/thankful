@@ -4,26 +4,26 @@
   --main-text-color: #E0DEDA;
   --main-text-highlight-color: #777c79;
 
-  --main-border-image-color:#1A1C1D;
+  --main-border-image-color: #1A1C1D;
 
   --searchbox-color: #1A1C1D;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-html{
+html {
   transition: all 0.3s ease-in-out !important;
 }
 
 body {
   background-color: var(--main-bg-color);
   font-family: 'Open Sans', sans-serif;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 #btn-toggle {
-  align-self: flex-end; 
+  align-self: flex-end;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -53,11 +53,11 @@ body {
   font-weight: 700;
   color: var(--main-text-color);
 
-  text-shadow: 
+  text-shadow:
     0px 1px 0px var(--main-text-highlight-color),
-    1px 0px 0px var(--main-text-highlight-color), 
+    1px 0px 0px var(--main-text-highlight-color),
     1px 2px 0px var(--main-text-highlight-color),
-    2px 1px 0px var(--main-text-highlight-color), 
+    2px 1px 0px var(--main-text-highlight-color),
     2px 3px 0px var(--main-text-highlight-color);
 }
 
@@ -68,7 +68,7 @@ body {
   margin: 15px 0 15px 0;
   padding: 15px 15px;
   opacity: 75%;
-  
+
   border: none;
   border-radius: 5px;
 
@@ -100,8 +100,8 @@ body {
 
   grid-template-columns: repeat(3, 33.33%);
 
-  grid-row-gap:    25px;
-  
+  grid-row-gap: 25px;
+
 }
 
 .linkblock {
@@ -150,4 +150,21 @@ a:hover {
   color: var(--main-text-highlight-color);
   font-size: 25px;
   transition: 0.1s ease-in-out !important;
+}
+
+/* media queries */
+
+/* portrait */
+@media only screen and (max-width: 1200px) {
+  #container {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+}
+
+/* mobile */
+@media only screen and (max-width: 700px) {
+  #container {
+    grid-template-columns: repeat(1, 100%);
+  }
 }
